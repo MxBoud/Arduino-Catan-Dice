@@ -1,5 +1,8 @@
 # Arduino-Catan-Dice
 
+![Picture](https://github.com/MxBoud/Arduino-Catan-Dice/blob/master/Ressources/Images/01.jpg)
+![Schematics](https://github.com/MxBoud/Arduino-Catan-Dice/blob/master/Ressources/Images/Schematics.png)
+
 parts
 https://www.digikey.ca/product-detail/en/e-switch/PS1024ARED/EG2015-ND/44577
 https://www.adafruit.com/product/181
@@ -21,6 +24,8 @@ https://www.amazon.ca/Seloky-Straight-Connector-Assortment-Prototype/dp/B07F74QR
 
 
 STL :
+https://a360.co/2SIfUmJ
+FUSION 360 
 https://a360.co/2SIfUmJ
 
 Acknolwedgement
