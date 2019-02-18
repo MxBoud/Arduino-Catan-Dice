@@ -1,10 +1,34 @@
-# Arduino-Catan-Dice
+# Arduino Catan Dice
 
+I really love playing Settles of Catan with my friends! After a game, we always end up discussing about the outcome of the game, commenting on how some numbers did not appear as ofen than what we should statistically expect. I decided to create an electronic dice that can add a little bit of exictement to the game and keeps track of the statistics about the dices outcome. 
 ![Picture](https://github.com/MxBoud/Arduino-Catan-Dice/blob/master/Ressources/Images/01.jpg)
+
+## Statistics 
+
+### Game statistics
+Every time the dice is rolled, the alrogithm records the outcome. From this data, it is possible to display the number of rolls of the game, the number of times the seven (robber) was rolled and the relative percentage of outcome of all the numbers. The game statistics are erased when the Arduino is reseted. 
+
+### Global statistics
+In addition to the game statistics, this project uses the non-volatile EEPROM memory of the Arduino to keep tracks of the global outcome of the dice. At anytime (even after a power off), it can shows the total number of rolls, the total number of game and the relative percentage of roll of every numbers. 
+
+## How to use it
+After a power up, every time you momentarily push the button, the dice will be rolled. To access the game statistics and the global statitistics, the button must be pressed for more than one second. To reset the global statistics, the Arduino must be reseted and the button pressed down for more than 3 seconds after the power up. 
+
+## How to build it 
+
+### Parts list
+https://www.digikey.ca/product-detail/en/e-switch/PS1024ARED/EG2015-ND/44577
+
+### Electronic schematics
 ![Schematics](https://github.com/MxBoud/Arduino-Catan-Dice/blob/master/Ressources/Images/Schematics.png)
 
-parts
-https://www.digikey.ca/product-detail/en/e-switch/PS1024ARED/EG2015-ND/44577
+### Ressources used and acknowledgement
+The idea came by discussing with my friend Alexandre. However, after googling it, it was of course already made (here and her), but I did not found one that was keeping tracks of the statistics and was using a 3D printed cover. 
+
+
+
+
+
 https://www.adafruit.com/product/181
 button
 https://www.adafruit.com/product/917
