@@ -17,7 +17,7 @@ After a power up, every time you momentarily push the button, the dice will be r
 ## How to build it 
 
 ### Parts list
-https://www.digikey.ca/product-detail/en/e-switch/PS1024ARED/EG2015-ND/44577
+* [Power switch] (https://www.digikey.ca/product-detail/en/e-switch/PS1024ARED/EG2015-ND/44577)
 
 ### Electronic schematics
 ![Schematics](https://github.com/MxBoud/Arduino-Catan-Dice/blob/master/Ressources/Images/Schematics.png)
