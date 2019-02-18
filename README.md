@@ -1,5 +1,7 @@
 # Arduino Catan Dice
 
+[See the video on Youtube](https://youtu.be/gaEj32isIZw)
+
 I really enjoy playing Settlers of Catan with my friends! After a game, we always end up discussing about the outcome of the game and dice rolls, commenting on how some numbers did not appear as often as we should statistically expect. I decided to build an electronic dice that can add a little bit of excitement to the game and keeps track of the statistics about the dices outcome. 
 ![Picture](https://github.com/MxBoud/Arduino-Catan-Dice/blob/master/Ressources/Images/01.jpg)
 
