@@ -40,7 +40,7 @@ After a power up, every time you momentarily push the button, the dice will be r
 ### Ressources used and acknowledgement
 * The idea came by discussing with my friend Alexandre. However, after googling it, it was of course already made ([here](https://create.arduino.cc/projecthub/joshi/settlers-of-catan-dice-d653f0) and [here](https://www.youtube.com/watch?v=biL6dSZkcWw)), but I did not found one that was keeping tracks of the statistics and was using a 3D printed cover. 
 
-* Thanks Nicole, Lindsay and Alexandre for testing the device with me :). 
+* Thanks to Nicole, Lindsay and Alexandre for testing the device with me :). 
 * The code from [this tutorial](https://www.instructables.com/id/Arduino-Display-Messages-Using-Hardware-Interrupts/) was very usefull! 
 
 
