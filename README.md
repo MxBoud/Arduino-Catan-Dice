@@ -31,7 +31,7 @@ After a power up, every time you momentarily push the button, the dice will be r
 * [Piezo electric passive buzzer](https://www.amazon.ca/Cylewet-Terminals-Electronic-Electromagnetic-Impedance/dp/B07DDG9HD9/ref=sr_1_2?ie=UTF8&qid=1550519198&sr=8-2&keywords=arduino+buzzer)
 * [Trough hole pcb termials](https://www.amazon.ca/Seloky-Straight-Connector-Assortment-Prototype/dp/B07F74QRYH/ref=sr_1_4?ie=UTF8&qid=1550519222&sr=8-4&keywords=pcb+header) (if you want to be able to remove the arduino from the board). 
 * A solder iron, some soldering skills and patience :) 
-* 3D printed hex case (click [here for the Fusion 360 file](https://a360.co/2SIfUmJ) and here for the .STL's files)
+* 3D printed hex case (click [here for the Fusion 360 file](https://a360.co/2SIfUmJ) and [here for the .STL's files](https://www.thingiverse.com/thing:3437213))
 * Some M3 screws and nuts 
 * Some M2 screws and nuts 
 ### Electronic schematics
