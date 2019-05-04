@@ -8,7 +8,9 @@ LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 const int lcdX = 16; //To help center the messages
 
 //Button
-#define buttonPin 2
+//#define buttonPin 2
+#define buttonPin A0 //For LCD KEYPAD 
+
 bool buttonDown = false;
 long lastTime = 0;
 
@@ -63,7 +65,8 @@ void setup() {
   lcdPrintCenter("Dice ready !", 0, true);
   lcdPrintCenter("Happy Catan :)", 1, false);
   delay(100);
-  attachInterrupt(digitalPinToInterrupt(buttonPin), buttonIsDown, FALLING);
+  //THE INTERUPT IS REMOVED SINCE THE LCD KEYPAD USES THE ANALOG A0
+  //attachInterrupt(digitalPinToInterrupt(buttonPin), buttonIsDown, FALLING);
   buttonDown = false; //prevents a dice roll at startup.
 
   //Greeting music
@@ -186,6 +189,13 @@ void rollDices() {//Generate the dice output with some suspence sound
 }
 
 void loop() {
+  int analogMin = 100; //THIS HAVE TO BE ADAPTED TO THE SELECT BUTTON
+  int analogMax = 200; //THIS HAVE TO BE ADAPTED TO THE SELECT BUTTON
+  int analogPinRead = analogRead(buttonPin); 
+  if (analogPinRead > analogMin&& analogPinRead<analogMax) {
+    //The select button has been pressed. 
+    buttonDown = true; 
+  }
   //Serial.println(digitalRead(buttonPin));
   if (buttonDown) {
     delay(50);
@@ -194,7 +204,7 @@ void loop() {
     //User input management. If the button is kept down for more than 1 second, it 
     //will change the menu state. If it's down for less than a second, the operation will 
     //depends on the menu state.
-    while (digitalRead(buttonPin) == LOW) {
+    while (analogRead(buttonPin) > analogMin && analogRead(buttonPin)<analogMax) {
         if (millis()  > timerStart + 1000) {
         mainStateChange();
         if (mainState == 0) {//Dice roll state
@@ -384,4 +394,3 @@ void storeValue(int value) {//This function uptates the stats and store the glob
   EEPROM.put(eeAddress, globalStats) ;
 
 }
-
