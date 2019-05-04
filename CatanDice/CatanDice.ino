@@ -65,6 +65,24 @@ void setup() {
   delay(100);
   attachInterrupt(digitalPinToInterrupt(buttonPin), buttonIsDown, FALLING);
   buttonDown = false; //prevents a dice roll at startup.
+
+  //Greeting music
+  tone(tonePin,600); 
+  delay(250);
+  noTone(tonePin); 
+  delay(50); 
+  tone(tonePin,600); 
+  delay(250); 
+  noTone(tonePin);
+  delay(50);
+  tone(tonePin,600); 
+  delay(250);
+  noTone(tonePin);
+  delay(50);
+  tone(tonePin,800);
+  delay(1000);
+  noTone(tonePin); 
+  
 }
 
 //A small function to center the printed text on the LCD
